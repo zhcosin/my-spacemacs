@@ -47,11 +47,11 @@ values."
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     spell-checking
-     syntax-checking
+     ;;spell-checking
+     ;;syntax-checking
      version-control
-     (latex :variables latex-build-command "LaTeX")
-     )
+     (latex :variables latex-build-command "LaTeX"))
+     
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
@@ -309,6 +309,7 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq TeX-engine 'xetex)
+  (setq TeX-show-compilation t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
