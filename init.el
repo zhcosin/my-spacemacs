@@ -299,6 +299,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
 
 (add-hook 'org-mode-hook 
           (lambda () (setq truncate-lines nil))) 
+(add-hook 'LaTeX-mode-hook
+          (lambda () (auto-fill-mode -1)))
   )
 
 (defun dotspacemacs/user-config ()
